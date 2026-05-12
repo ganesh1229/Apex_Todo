@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            NovaUI
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="todo.html">To-Do List</a></li>
+        </ul>
+
+        <button class="theme-btn" onclick="toggleTheme()">
+            Change Theme
+        </button>
+
+    </nav>
+
+    <!-- Todo Section -->
+
+    <section class="todo-section">
+
+        <div class="todo-container">
+
+            <h1>Task Manager</h1>
+
+            <div class="todo-input">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter your task"
+                >
+
+                <button onclick="addTask()">
+                    Add Task
+                </button>
+
+            </div>
+
+            <ul id="taskList"></ul>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 NovaUI Experience</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

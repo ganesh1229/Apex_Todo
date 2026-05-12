@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            NovaUI
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="todo.html">To-Do List</a></li>
+        </ul>
+
+        <button class="theme-btn" onclick="toggleTheme()">
+            Change Theme
+        </button>
+
+    </nav>
+
+    <!-- Contact Form -->
+
+    <section class="contact-section">
+
+        <div class="contact-container">
+
+            <h1>Contact Form</h1>
+
+            <form id="contactForm">
+
+                <div class="input-grid">
+
+                    <div>
+                        <input
+                            type="text"
+                            id="firstName"
+                            placeholder="First Name"
+                        >
+                        <small id="firstError"></small>
+                    </div>
+
+                    <div>
+                        <input
+                            type="text"
+                            id="middleName"
+                            placeholder="Middle Name"
+                        >
+                    </div>
+
+                    <div>
+                        <input
+                            type="text"
+                            id="lastName"
+                            placeholder="Last Name"
+                        >
+                        <small id="lastError"></small>
+                    </div>
+
+                </div>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                >
+
+                <small id="emailError"></small>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Phone Number"
+                >
+
+                <small id="phoneError"></small>
+
+                <textarea
+                    id="message"
+                    placeholder="Write your message..."
+                ></textarea>
+
+                <small id="messageError"></small>
+
+                <button type="submit">
+                    Submit Form
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 NovaUI Experience</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
